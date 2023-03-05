@@ -14,7 +14,7 @@ const NormalUploader = () => {
 
 	const rainbowKitProvider = useProvider();
 	const { data: rainbowKitSigner } = useSigner();
-	const { data: estimatedPrice, isError, isLoading  } = useContractRead({
+	const { data: jobDetails  } = useContractRead({
 		addressOrName: '0xceBD2e7b189ea320fB5d1bd79B308232D762dF94',
 		contractInterface: functionConsumerAbi,
 		functionName: 'latestResponse'
@@ -87,9 +87,9 @@ const NormalUploader = () => {
 						{uploadedURL}
 					</a>
 				)}
-				{estimatedPrice && (
+				{jobDetails && (
 					<p>
-						{parseInt(BigInt("0x" + estimatedPrice.slice(2).slice(-64)).toString(10)) / 100}
+						{Buffer.from(jobDetails.slice(2), "hex").toString()}
 					</p>
 				)}
 			</p>
