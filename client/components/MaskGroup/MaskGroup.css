@@ -1,0 +1,15 @@
+.mask-group-1 {
+  align-items: flex-start;
+  background-image: url(/static/img/big-box@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 420px;
+  min-width: 334px;
+  position: absolute;
+}
+
+.laptop-stand-3-d-print-1-2 {
+  height: 247px;
+  width: 334px;
+}
+

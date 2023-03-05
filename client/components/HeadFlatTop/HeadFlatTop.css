@@ -1,0 +1,34 @@
+.head-flat-top {
+  align-items: flex-start;
+  display: flex;
+  height: 177px;
+  justify-content: flex-end;
+  left: 70px;
+  min-width: 148px;
+  padding: 14.1px 14.3px;
+  position: absolute;
+  top: 0;
+}
+
+.overlap-group1-5 {
+  height: 144px;
+  position: relative;
+  width: 117px;
+}
+
+.background-5 {
+  height: 132px;
+  left: 1px;
+  position: absolute;
+  top: 9px;
+  width: 113px;
+}
+
+.ink-7 {
+  height: 144px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 117px;
+}
+

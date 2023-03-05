@@ -1,0 +1,15 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Archivo:400,700,300,500,100,200|Aleo:700");
+/* The following line is used to measure usage of this code in production. For more info see our usage billing page */
+@import url("https://px.animaapp.com/60ca7805d9720ba00180f838.60ca7806d9720ba00180f83b.RJ1CzUC.rcp.png");
+
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

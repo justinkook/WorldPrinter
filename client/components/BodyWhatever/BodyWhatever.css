@@ -1,0 +1,34 @@
+.body-whatever {
+  align-items: flex-start;
+  display: flex;
+  height: 229px;
+  justify-content: flex-end;
+  left: 0;
+  min-width: 256px;
+  position: absolute;
+  top: 143px;
+}
+
+.overlap-group-8 {
+  height: 216px;
+  margin-top: -6.87px;
+  position: relative;
+  width: 364px;
+}
+
+.background-4 {
+  height: 216px;
+  left: 1px;
+  position: absolute;
+  top: 0;
+  width: 357px;
+}
+
+.ink-6 {
+  height: 208px;
+  left: 0;
+  position: absolute;
+  top: 9px;
+  width: 364px;
+}
+

@@ -1,0 +1,35 @@
+.body-killer {
+  align-items: flex-start;
+  display: flex;
+  height: 224px;
+  justify-content: flex-end;
+  left: 0;
+  min-width: 250px;
+  padding: 0 12.2px;
+  position: absolute;
+  top: 140px;
+}
+
+.overlap-group-7 {
+  height: 232px;
+  margin-top: -18.66px;
+  position: relative;
+  width: 225px;
+}
+
+.background-2 {
+  height: 230px;
+  left: 10px;
+  position: absolute;
+  top: 0;
+  width: 212px;
+}
+
+.ink-3 {
+  height: 209px;
+  left: 0;
+  position: absolute;
+  top: 23px;
+  width: 225px;
+}
+

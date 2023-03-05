@@ -1,0 +1,34 @@
+.body-macbook {
+  align-items: flex-start;
+  display: flex;
+  height: 225px;
+  justify-content: flex-end;
+  left: 0;
+  min-width: 251px;
+  position: absolute;
+  top: 141px;
+}
+
+.overlap-group-6 {
+  height: 225px;
+  margin-top: -7.37px;
+  position: relative;
+  width: 307px;
+}
+
+.background {
+  height: 224px;
+  left: 2px;
+  position: absolute;
+  top: 0;
+  width: 303px;
+}
+
+.ink {
+  height: 220px;
+  left: 0;
+  position: absolute;
+  top: 6px;
+  width: 307px;
+}
+

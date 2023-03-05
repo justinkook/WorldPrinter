@@ -1,0 +1,30 @@
+.face {
+  align-items: flex-end;
+  display: flex;
+  height: 90px;
+  justify-content: flex-end;
+  left: 117px;
+  min-width: 88px;
+  padding: 15.0px 15.9px;
+  position: absolute;
+  top: 57px;
+}
+
+.ink-5 {
+  height: 59px;
+  width: 56px;
+}
+
+.face.face-1 {
+  height: 92px;
+  left: 120px;
+  min-width: 90px;
+  padding: 15.4px 16.2px;
+  top: 58px;
+}
+
+.face.face-1 .ink-5 {
+  height: 60px;
+  width: 58px;
+}
+
