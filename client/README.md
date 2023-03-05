@@ -2,6 +2,8 @@
 
 This package was generated automatically with [Anima App](https://www.animaapp.com).
 
+[![Watch the video](https://img.youtube.com/vi/JhfhsvKS5FE/hqdefault.jpg)](https://youtu.be/JhfhsvKS5FE)
+
 ## Instructions
 
 ### Run locally

@@ -117,7 +117,7 @@ const landingPageData = {
     butIMustExplainT6: "Don’t spend $5k on a printer. We’ll connect you with a printer in your area",
     getStarted2: "Order",
     wifeMad3DPrintSomeMoney: <React.Fragment>Partner mad?<br />3D print some money</React.Fragment>,
-    butIMustExplainT7: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give",
+    butIMustExplainT7: "Monetize your idle 3D printer and earn passive income today! Don't let your printer go to waste",
     listAPrinter: "List a printer",
     maskGroup1Props: maskGroup1Data,
     maskGroup2Props: maskGroup2Data,
