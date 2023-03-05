@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import MaskGroup from "../MaskGroup";
 import APersonbust from "../APersonbust";
 import APersonbust2 from "../APersonbust2";
 import APersonbust3 from "../APersonbust3";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import Modal from "../Modal";
+
 import "./LandingPage.css";
-import NormalUploader from "../NormalUploader";
 
 function LandingPage(props) {
   const {
@@ -63,6 +64,12 @@ function LandingPage(props) {
     maskGroup2Props,
     aPersonbust3Props,
   } = props;
+
+  const [isModalOpen, setModalIsOpen] = useState(false);
+
+  const toggleModal = () => {
+		setModalIsOpen(!isModalOpen);
+	};
 
   return (
     <div className="landing-page screen">
@@ -198,9 +205,9 @@ function LandingPage(props) {
                 <div className="print-anything-anywhere aleo-bold-tundora-60px">{printAnythingAnywhere}</div>
                 <p className="but-i-must-explain-t-4 archivo-light-regal-blue-24px">{butIMustExplainT5}</p>
               </div>
-              <NormalUploader/>
+              {isModalOpen && <Modal onRequestClose={toggleModal} />}
               <div className="overlap-group-5">
-                <div className="get-started archivo-bold-tundora-31px">{getStarted1}</div>
+                <div className="get-started archivo-bold-tundora-31px" onClick={toggleModal}>{getStarted1}</div>
               </div>
             </div>
           </div>

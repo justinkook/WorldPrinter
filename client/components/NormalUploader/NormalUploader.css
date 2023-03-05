@@ -1,0 +1,160 @@
+.request-a-print {
+    align-items: flex-end;
+    background-color: var(--mercury);
+    border: 1px none;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    height: 1159px;
+    padding: 60px 81px;
+    width: 1728px;
+  }
+  
+  .frame-12 {
+    align-items: flex-end;
+    align-self: center;
+    display: flex;
+    height: 730px;
+    min-width: 1524px;
+    background-color: var(--mercury);
+    border-radius: 30px;
+    box-shadow: inset 10px 10px 30px #b3b3b366 , inset -10px -10px 30px #fefefe80;
+    height: 736px;
+    left: 129px;
+    position: absolute;
+    top: 62px;
+    width: 1507px;
+  }
+
+  .frame-12.inner-shadow {
+    background-color: unset;
+    left: 21px;
+    top: 23px;
+  }
+  
+  .request-a-new-3-d-print {
+    color: var(--regal-blue);
+    font-family: var(--font-family-archivo);
+    font-size: 42px;
+    font-weight: 400;
+    left: 79px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 73px;
+    width: 669px;
+  }
+  
+  .small-box {
+    height: 73px;
+    left: 786px;
+    position: absolute;
+    top: 379px;
+    width: 672px;
+  }
+  
+  .upload-your-stl-file {
+    left: 781px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 398px;
+    width: 351px;
+  }
+  
+  .preview {
+    left: 79px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 275px;
+    width: 236px;
+  }
+  
+  .browse {
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 36px;
+    text-align: center;
+    width: 236px;
+  }
+  
+  .upload {
+    color: var(--regal-blue);
+    font-family: var(--font-family-archivo);
+    font-size: var(--font-size-xxxl);
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 34px;
+    text-align: center;
+    width: 236px;
+  }
+
+  .upload-container {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+   
+  .text-container {
+    text-align: right;
+    position: absolute;
+    bottom: 200px;
+    right: 20px;
+    max-width: 900px;
+  }
+
+  .new-print-card {
+    background-color: var(--gray-nurse);
+    border-radius: 35px;
+    box-shadow: 20px 20px 60px #b3b3b366 , -20px -20px 60px #ffffff80;
+    height: 356px;
+    left: 79px;
+    position: absolute;
+    top: 334px;
+    width: 371px;
+  }
+  
+  .override-box-shadow {
+    box-shadow: none !important;
+  }
+
+  .order {
+    background-color: var(--gray-nurse);
+    border: 1px solid;
+    border-color: var(--jordy-blue);
+    border-radius: 113px;
+    box-shadow: 12px 12px 24px #c6c5c566 , -12px -12px 24px #ffffffcc;
+    height: 60px;
+    left: 1394px;
+    position: absolute;
+    top: 74px;
+    transform: rotate(45.00deg);
+    width: 60px;
+  }
+  
+  .small-box-1 {
+    height: 301px;
+    left: 109px;
+    position: absolute;
+    top: 367px;
+    width: 314px;
+  }
+  
+  .vector {
+    height: 46px;
+    left: 1408px;
+    position: absolute;
+    top: 81px;
+    width: 31px;
+    cursor: pointer;
+  }
+
+  .success-card {
+    left: 40%;
+  }
+  
+  

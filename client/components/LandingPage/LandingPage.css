@@ -639,6 +639,7 @@
   min-height: 34px;
   min-width: 169px;
   text-align: center;
+  cursor: pointer;
 }
 
 .buyer-cta {
