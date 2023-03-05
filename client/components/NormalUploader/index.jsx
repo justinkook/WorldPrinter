@@ -4,6 +4,7 @@ import { WebBundlr } from "@bundlr-network/client";
 import fileReaderStream from "filereader-stream";
 import { useContractRead, useSendTransaction, usePrepareSendTransaction } from 'wagmi';
 import functionConsumerAbi from '../../contracts/abi/FunctionsConsumerAbi.json';
+import jobManagerAbi from '../../contracts/abi/JobManagerAbi.json';
 import {StlViewer} from "react-stl-viewer";
 import { BigNumber } from 'ethers'
 
@@ -18,11 +19,20 @@ const NormalUploader = ({onRequestClose}) => {
 
 	const rainbowKitProvider = useProvider();
 	const { data: rainbowKitSigner } = useSigner();
-	const { data: jobDetails  } = useContractRead({
+	const { data: uploadDetails  } = useContractRead({
 		addressOrName: '0xceBD2e7b189ea320fB5d1bd79B308232D762dF94',
 		contractInterface: functionConsumerAbi,
 		functionName: 'latestResponse'
 	  })
+
+	const { data: jobDetails , isError } = useContractRead({
+		addressOrName: '0x563A9454E9F4d59d23B55d026F9ca80aA997056c',
+		contractInterface: jobManagerAbi,
+		functionName: 'getPrintJobDetails',
+		args: [1]
+	})
+
+	console.log(jobDetails, isError);
 
 	const { config } = usePrepareSendTransaction({
 	request: { to: '0x41e342Ed835f02176B3b162b9903eC530DEDF60e', value: BigNumber.from('21838596958078430') },
@@ -119,9 +129,9 @@ const NormalUploader = ({onRequestClose}) => {
 						{uploadedURL}
 					</a>
 				)}
-				{jobDetails && uploadedURL && (
+				{uploadDetails && uploadedURL && (
 					<p>
-						{JSON.stringify(Buffer.from(jobDetails.slice(2), "hex").toString(), null, 2)}
+						{JSON.stringify(Buffer.from(uploadDetails.slice(2), "hex").toString(), null, 2)}
 					</p>
 				)}
 			</p>
