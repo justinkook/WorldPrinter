@@ -35,7 +35,7 @@ const requestConfig = {
   // args can be accessed within the source code with `args[index]` (ie: args[0])
   args: ["P5mbHCBuYhso-vt8hC-z0ur5LYkwqBPwTw3yYC_M3pE"],
   // expected type of the returned value
-  expectedReturnType: ReturnType.uint256,
+  expectedReturnType: ReturnType.string,
 }
 
 module.exports = requestConfig

@@ -127,9 +127,11 @@ function _parseSTLString (stl) {
 
 	var volumeTotal = Math.abs(totalVol)/1000;
 	return {
+		txid: txid,
 		volume: volumeTotal, 		    // cubic cm
 		weight: volumeTotal * 1.04,	// gm
-    boundingBox: _boundingBox(verteces),
+    	boundingBox: _boundingBox(verteces),
+		totalCost: (volumeTotal / 1000) * COST_OF_MATERIAL
 	}
 }
 
@@ -165,9 +167,11 @@ function _parseSTLBinary (buf) {
 
 	var volumeTotal = Math.abs(totalVol)/1000;
 	return {
+		txid: txid,
 		volume: volumeTotal,		    // cubic cm
 		weight: volumeTotal * 1.04,	// gm
-    boundingBox: _boundingBox(verteces),
+    	boundingBox: _boundingBox(verteces),
+		totalCost: (volumeTotal / 1000) * COST_OF_MATERIAL
 	}
 }
 
@@ -190,8 +194,6 @@ function NodeStl(buf) {
 		return _parseSTLBinary(buf);
 }
 
-console.log(NodeStl(stlFile));
-
 // Solidity doesn't support decimals so multiply by 100 and round to the nearest integer
 // Use Functions.encodeUint256 to encode an unsigned integer to a Buffer
-return Functions.encodeUint256(Math.round(NodeStl(stlFile).volume * COST_OF_MATERIAL * 100));
+return Functions.encodeString(JSON.stringify(NodeStl(stlFile)))
