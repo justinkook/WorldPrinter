@@ -75,6 +75,15 @@
   min-height: 34px;
   min-width: 161px;
   text-align: center;
+  cursor: pointer;
+}
+
+.order-print:hover {
+  background-color: var(--mercury);
+  border: 1px solid;
+  border-color: #d8d7d7;
+  border-radius: 10px;
+  box-shadow: inset 12px 12px 24px #b3b3b366 , inset -12px -12px 24px #fefefe80;
 }
 
 .overlap-group2 {

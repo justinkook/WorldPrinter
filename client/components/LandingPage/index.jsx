@@ -84,7 +84,8 @@ function LandingPage(props) {
             <div className="place archivo-bold-tundora-31px">{place}</div>
           </div>
           <div className="overlap-group1">
-            <div className="order-print archivo-bold-tundora-31px">{orderPrint}</div>
+            <div className="order-print archivo-bold-tundora-31px" onClick={toggleModal}>{orderPrint}</div>
+            {isModalOpen && <Modal onRequestClose={toggleModal} />}
           </div>
           <div className="overlap-group2">
             <div className="connect-wallet archivo-bold-tundora-31px"><ConnectButton showBalance={false}/></div>
@@ -205,9 +206,8 @@ function LandingPage(props) {
                 <div className="print-anything-anywhere aleo-bold-tundora-60px">{printAnythingAnywhere}</div>
                 <p className="but-i-must-explain-t-4 archivo-light-regal-blue-24px">{butIMustExplainT5}</p>
               </div>
-              {isModalOpen && <Modal onRequestClose={toggleModal} />}
               <div className="overlap-group-5">
-                <div className="get-started archivo-bold-tundora-31px" onClick={toggleModal}>{getStarted1}</div>
+                <div className="get-started archivo-bold-tundora-31px">{getStarted1}</div>
               </div>
             </div>
           </div>
